@@ -59,7 +59,7 @@ If the recognition result is poor, retake the PNG image and start again from acr
 
 The source code of this software is not publicly available. Please see [LICENSE](LICENSE) for the terms of use.
 
-【要確認: 無償利用の可否・登録の要否・ウォーターマークの対象】
+You can use the software without a license key by choosing "Skip" on the license registration screen at startup (the registration screen appears each time you launch the software).
 
 ## Contact
 

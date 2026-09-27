@@ -59,7 +59,7 @@ Si le résultat de la lecture n'est pas satisfaisant, reprenez l'image PNG et re
 
 Le code source de ce logiciel n'est pas public. Veuillez consulter le fichier [LICENSE](LICENSE) pour les conditions d'utilisation.
 
-【要確認: 無償利用の可否・登録の要否・ウォーターマークの対象】
+Vous pouvez utiliser le logiciel sans clé de licence en choisissant « Ignorer » sur l'écran d'enregistrement de la licence au démarrage (cet écran s'affiche à chaque lancement).
 
 ## Contact
 
