@@ -2,11 +2,11 @@
 
 [English](README.md) | [日本語](README.ja.md) | Français
 
-ACR Generator est une application de bureau qui charge le JSON créé par [acrpng2json](https://github.com/acrossreport/acrpng2json) à partir d'une image PNG d'un document, et crée une définition de rapport ACR (AcrossReport) au format JSON.
+ACR Generator est une application de bureau qui charge le JSON créé par [acr-png2json](https://github.com/acrossreport/acr-png2json) à partir d'une image PNG d'un document, et crée une définition de rapport ACR (AcrossReport) au format JSON.
 
 ## Fonctionnalités
 
-- Vérification à l'écran du texte et des lignes lus par acrpng2json
+- Vérification à l'écran du texte et des lignes lus par acr-png2json
 - **Section** : ajout de sections (bandes) telles que l'en-tête, le détail et le pied de page au contenu chargé, puis enregistrement
 - **Free Canvas** : vérification du résultat chargé sans sections et enregistrement tel quel. Cliquez sur un contrôle pour voir les valeurs lues
 - Affichage de la grille et zoom (Ctrl + molette de la souris)
@@ -23,7 +23,7 @@ Ouvrez le JSON enregistré dans AcrossReport Designer pour le finaliser. Le plac
 | macOS (Intel) | Prévu |
 | Linux x64 | Prévu |
 
-- Versions de Windows prises en charge : 【要確認】
+- Versions de Windows prises en charge : Windows 11 ou version ultérieure
 - Le runtime .NET est inclus ; aucune installation séparée n'est nécessaire
 
 ## Téléchargement
@@ -40,18 +40,18 @@ Téléchargez le fichier correspondant à votre OS depuis les [Releases](https:/
 
 ## Utilisation
 
-1. Créez un JSON à partir d'une image PNG d'un document avec acrpng2json
+1. Créez un JSON à partir d'une image PNG d'un document avec acr-png2json
 2. Chargez ce JSON avec « Importer JSON » dans ACR Generator
 3. Choisissez « Section » ou « FreeCanvas » à gauche de l'écran
    - Section : choisissez un type de bande, indiquez les positions de début et de fin (mm), puis cliquez sur « Enregistrer les sections »
    - Free Canvas : cliquez sur les contrôles pour vérifier les valeurs lues, puis cliquez sur « Enregistrer JSON »
 4. Ouvrez le JSON enregistré dans AcrossReport Designer
 
-Si le résultat de la lecture n'est pas satisfaisant, reprenez l'image PNG et recommencez à partir d'acrpng2json.
+Si le résultat de la lecture n'est pas satisfaisant, reprenez l'image PNG et recommencez à partir d'acr-png2json.
 
 ## Liens
 
-- acrpng2json : https://github.com/acrossreport/acrpng2json
+- acr-png2json : https://github.com/acrossreport/acr-png2json
 - Spécification ACR (modèle JSON) : https://github.com/acrossreport/acr-spec
 - Site officiel : https://acrossreport.com
 

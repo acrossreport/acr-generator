@@ -2,11 +2,11 @@
 
 [English](README.md) | 日本語 | [Français](README.fr.md)
 
-ACR Generator は、[acrpng2json](https://github.com/acrossreport/acrpng2json) が帳票の PNG 画像から作成した JSON を読み込み、ACR(AcrossReport)の帳票定義(JSON)を作成するデスクトップアプリケーションです。
+ACR Generator は、[acr-png2json](https://github.com/acrossreport/acr-png2json) が帳票の PNG 画像から作成した JSON を読み込み、ACR(AcrossReport)の帳票定義(JSON)を作成するデスクトップアプリケーションです。
 
 ## 特長
 
-- acrpng2json が読み取った文字・罫線を画面で確認できます
+- acr-png2json が読み取った文字・罫線を画面で確認できます
 - **セクション**:読み込んだ内容に、ヘッダー・明細・フッターなどのセクション(帯)を付けて保存します
 - **Free Canvas**:セクションを付けずに読み込み結果を確認し、そのまま保存します。部品をクリックすると、読み取った値を確認できます
 - グリッド表示、ズーム(Ctrl + マウスホイール)
@@ -23,7 +23,7 @@ ACR Generator は、[acrpng2json](https://github.com/acrossreport/acrpng2json) �
 | macOS(Intel) | 対応予定 |
 | Linux x64 | 対応予定 |
 
-- 対応する Windows のバージョン:【要確認】
+- 対応する Windows のバージョン:Windows 11 以上
 - .NET ランタイムを同梱しているため、別途インストールは不要です
 
 ## ダウンロード
@@ -40,18 +40,18 @@ ACR Generator は、[acrpng2json](https://github.com/acrossreport/acrpng2json) �
 
 ## 使い方
 
-1. acrpng2json で、帳票の PNG 画像から JSON を作成します
+1. acr-png2json で、帳票の PNG 画像から JSON を作成します
 2. ACR Generator の「PNG-JSON読込」で、その JSON を読み込みます
 3. 画面左で「セクション」または「Free Canvas」を選びます
    - セクション:帯の種類を選び、開始位置・終了位置(mm)を指定して「セクション保存」
    - Free Canvas:部品をクリックして読み取った値を確認し、「JSON保存」
 4. 保存した JSON を AcrossReport Designer で開きます
 
-読み取り結果がよくない場合は、PNG 画像を撮り直して acrpng2json からやり直してください。
+読み取り結果がよくない場合は、PNG 画像を撮り直して acr-png2json からやり直してください。
 
 ## 関連リンク
 
-- acrpng2json:https://github.com/acrossreport/acrpng2json
+- acr-png2json:https://github.com/acrossreport/acr-png2json
 - ACR 仕様(JSON テンプレート):https://github.com/acrossreport/acr-spec
 - 公式サイト:https://acrossreport.com
 
