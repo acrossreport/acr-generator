@@ -18,25 +18,55 @@ ACR Generator は、[acr-png2json](https://github.com/acrossreport/acr-png2json)
 
 | OS | 状況 |
 |---|---|
-| Windows x64 | 対応(本リリース) |
-| macOS(Apple Silicon) | 対応予定 |
-| macOS(Intel) | 対応予定 |
-| Linux x64 | 対応予定 |
+| Windows x64 | 対応 |
+| macOS(Apple Silicon) | 対応 |
+| macOS(Intel) | 対応 |
+| Linux x64 | 対応 |
 
-- 対応する Windows のバージョン:Windows 11 以上
+- Windows:Windows 11 以上
+- macOS:macOS 14(Sonoma)以上。Developer ID で署名し、Apple の公証を受けています
+- Linux:デスクトップ環境が必要です。OpenSSL 3(`libssl.so.3`)が必要で、Ubuntu 22.04 以上には標準で入っています。Ubuntu 24.04 LTS で動作を確認しています
 - .NET ランタイムを同梱しているため、別途インストールは不要です
 
 ## ダウンロード
 
 [Releases](https://github.com/acrossreport/acr-generator/releases) から、お使いの OS 用のファイルをダウンロードしてください。
 
-- Windows x64:`AcrGenerator-v0.0.1-win-x64.zip`
+| OS | ファイル |
+|---|---|
+| Windows x64 | `AcrGenerator-v0.0.2-win-x64.zip` |
+| macOS(Apple Silicon) | `AcrGenerator-v0.0.2-osx-arm64.zip` |
+| macOS(Intel) | `AcrGenerator-v0.0.2-osx-x64.zip` |
+| Linux x64 | `AcrGenerator-v0.0.2-linux-x64.zip` |
 
 ## インストールと起動
 
+### Windows
+
 1. ダウンロードした zip を任意のフォルダに展開します
-2. 展開したフォルダの中の `AcrGenerator.exe` を実行します
-3. 初回起動時にライセンス登録画面が表示されます。メールアドレスとライセンスキーを入力して「認証する」を押すか、「スキップ(ウォーターマーク付き)」を選びます
+2. 展開した `win-x64` フォルダの中の `AcrGenerator.exe` を実行します
+
+### macOS
+
+1. ダウンロードした zip をダブルクリックして、`AcrGenerator.app` を取り出します
+2. `AcrGenerator.app` を「アプリケーション」フォルダに移します(任意)
+3. `AcrGenerator.app` をダブルクリックします。「インターネットからダウンロードされたアプリケーションです。開いてもよろしいですか?」と表示された場合は「開く」を押します
+
+### Linux
+
+1. ダウンロードした zip を任意のフォルダに展開します
+   ```
+   unzip AcrGenerator-v0.0.2-linux-x64.zip
+   ```
+2. 展開した `linux-x64` フォルダの中の `AcrGenerator` を実行します
+   ```
+   ./linux-x64/AcrGenerator
+   ```
+   実行権限がなく起動しない場合は、先に `chmod +x linux-x64/AcrGenerator` を実行してください
+
+### ライセンス登録(全 OS 共通)
+
+初回起動時にライセンス登録画面が表示されます。メールアドレスとライセンスキーを入力して「認証する」を押すか、「スキップ(ウォーターマーク付き)」を選びます
 
 ## 使い方
 

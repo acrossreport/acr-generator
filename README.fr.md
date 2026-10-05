@@ -18,25 +18,55 @@ Ouvrez le JSON enregistré dans AcrossReport Designer pour le finaliser. Le plac
 
 | OS | Statut |
 |---|---|
-| Windows x64 | Pris en charge (cette version) |
-| macOS (Apple Silicon) | Prévu |
-| macOS (Intel) | Prévu |
-| Linux x64 | Prévu |
+| Windows x64 | Pris en charge |
+| macOS (Apple Silicon) | Pris en charge |
+| macOS (Intel) | Pris en charge |
+| Linux x64 | Pris en charge |
 
-- Versions de Windows prises en charge : Windows 11 ou version ultérieure
+- Windows : Windows 11 ou version ultérieure
+- macOS : macOS 14 (Sonoma) ou version ultérieure. L'application est signée avec un Developer ID et notariée par Apple
+- Linux : un environnement de bureau est nécessaire. OpenSSL 3 (`libssl.so.3`) est requis ; il est inclus dans Ubuntu 22.04 ou version ultérieure. Testé sur Ubuntu 24.04 LTS
 - Le runtime .NET est inclus ; aucune installation séparée n'est nécessaire
 
 ## Téléchargement
 
 Téléchargez le fichier correspondant à votre OS depuis les [Releases](https://github.com/acrossreport/acr-generator/releases).
 
-- Windows x64 : `AcrGenerator-v0.0.1-win-x64.zip`
+| OS | Fichier |
+|---|---|
+| Windows x64 | `AcrGenerator-v0.0.2-win-x64.zip` |
+| macOS (Apple Silicon) | `AcrGenerator-v0.0.2-osx-arm64.zip` |
+| macOS (Intel) | `AcrGenerator-v0.0.2-osx-x64.zip` |
+| Linux x64 | `AcrGenerator-v0.0.2-linux-x64.zip` |
 
 ## Installation et lancement
 
+### Windows
+
 1. Extrayez le fichier zip téléchargé dans le dossier de votre choix
-2. Lancez `AcrGenerator.exe` dans le dossier extrait
-3. Au premier lancement, l'écran d'enregistrement de la licence s'affiche. Saisissez votre adresse e-mail et votre clé de licence, puis cliquez sur « Authentifier », ou choisissez « Ignorer (avec filigrane) »
+2. Lancez `AcrGenerator.exe` dans le dossier `win-x64` extrait
+
+### macOS
+
+1. Double-cliquez sur le fichier zip téléchargé pour extraire `AcrGenerator.app`
+2. Déplacez `AcrGenerator.app` dans le dossier Applications (facultatif)
+3. Double-cliquez sur `AcrGenerator.app`. Si macOS demande s'il faut ouvrir une application téléchargée depuis Internet, cliquez sur « Ouvrir »
+
+### Linux
+
+1. Extrayez le fichier zip téléchargé dans le dossier de votre choix
+   ```
+   unzip AcrGenerator-v0.0.2-linux-x64.zip
+   ```
+2. Lancez `AcrGenerator` dans le dossier `linux-x64` extrait
+   ```
+   ./linux-x64/AcrGenerator
+   ```
+   S'il ne démarre pas faute de droit d'exécution, exécutez d'abord `chmod +x linux-x64/AcrGenerator`
+
+### Enregistrement de la licence (tous les OS)
+
+Au premier lancement, l'écran d'enregistrement de la licence s'affiche. Saisissez votre adresse e-mail et votre clé de licence, puis cliquez sur « Authentifier », ou choisissez « Ignorer (avec filigrane) »
 
 ## Utilisation
 

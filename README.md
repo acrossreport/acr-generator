@@ -18,25 +18,55 @@ Open the saved JSON in AcrossReport Designer to finish it. Placing and configuri
 
 | OS | Status |
 |---|---|
-| Windows x64 | Supported (this release) |
-| macOS (Apple Silicon) | Planned |
-| macOS (Intel) | Planned |
-| Linux x64 | Planned |
+| Windows x64 | Supported |
+| macOS (Apple Silicon) | Supported |
+| macOS (Intel) | Supported |
+| Linux x64 | Supported |
 
-- Supported Windows versions: Windows 11 or later
+- Windows: Windows 11 or later
+- macOS: macOS 14 (Sonoma) or later. The app is signed with a Developer ID and notarized by Apple
+- Linux: a desktop environment is required. OpenSSL 3 (`libssl.so.3`) is required; it is included in Ubuntu 22.04 or later. Tested on Ubuntu 24.04 LTS
 - The .NET runtime is included, so no separate installation is required
 
 ## Download
 
 Download the file for your OS from [Releases](https://github.com/acrossreport/acr-generator/releases).
 
-- Windows x64: `AcrGenerator-v0.0.1-win-x64.zip`
+| OS | File |
+|---|---|
+| Windows x64 | `AcrGenerator-v0.0.2-win-x64.zip` |
+| macOS (Apple Silicon) | `AcrGenerator-v0.0.2-osx-arm64.zip` |
+| macOS (Intel) | `AcrGenerator-v0.0.2-osx-x64.zip` |
+| Linux x64 | `AcrGenerator-v0.0.2-linux-x64.zip` |
 
 ## Installation and Launch
 
+### Windows
+
 1. Extract the downloaded zip to any folder
-2. Run `AcrGenerator.exe` in the extracted folder
-3. On first launch, the license registration screen appears. Enter your email address and license key and click "Authenticate", or choose "Skip (with watermark)"
+2. Run `AcrGenerator.exe` in the extracted `win-x64` folder
+
+### macOS
+
+1. Double-click the downloaded zip to extract `AcrGenerator.app`
+2. Move `AcrGenerator.app` to the Applications folder (optional)
+3. Double-click `AcrGenerator.app`. If macOS asks whether to open an app downloaded from the Internet, click "Open"
+
+### Linux
+
+1. Extract the downloaded zip to any folder
+   ```
+   unzip AcrGenerator-v0.0.2-linux-x64.zip
+   ```
+2. Run `AcrGenerator` in the extracted `linux-x64` folder
+   ```
+   ./linux-x64/AcrGenerator
+   ```
+   If it does not start because of missing execute permission, run `chmod +x linux-x64/AcrGenerator` first
+
+### License registration (all OS)
+
+On first launch, the license registration screen appears. Enter your email address and license key and click "Authenticate", or choose "Skip (with watermark)"
 
 ## Usage
 
