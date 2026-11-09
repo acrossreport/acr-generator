@@ -64,10 +64,6 @@ ACR Generator は、[acr-png2json](https://github.com/acrossreport/acr-png2json)
    ```
    実行権限がなく起動しない場合は、先に `chmod +x linux-x64/AcrGenerator` を実行してください
 
-### ライセンス登録(全 OS 共通)
-
-初回起動時にライセンス登録画面が表示されます。メールアドレスとライセンスキーを入力して「認証する」を押すか、「スキップ(ウォーターマーク付き)」を選びます
-
 ## 使い方
 
 1. acr-png2json で、帳票の PNG 画像から JSON を作成します
@@ -89,7 +85,7 @@ ACR Generator は、[acr-png2json](https://github.com/acrossreport/acr-png2json)
 
 本ソフトウェアのソースコードは公開していません。利用条件は [LICENSE](LICENSE) をご確認ください。
 
-ライセンスキーがなくても、起動時のライセンス登録画面で「スキップ」を選べば利用できます(登録画面は起動のたびに表示されます)。
+本ソフトウェアは無償で利用でき、ライセンスキーは不要です。
 
 ## お問い合わせ
 

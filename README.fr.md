@@ -64,10 +64,6 @@ Téléchargez le fichier correspondant à votre OS depuis les [Releases](https:/
    ```
    S'il ne démarre pas faute de droit d'exécution, exécutez d'abord `chmod +x linux-x64/AcrGenerator`
 
-### Enregistrement de la licence (tous les OS)
-
-Au premier lancement, l'écran d'enregistrement de la licence s'affiche. Saisissez votre adresse e-mail et votre clé de licence, puis cliquez sur « Authentifier », ou choisissez « Ignorer (avec filigrane) »
-
 ## Utilisation
 
 1. Créez un JSON à partir d'une image PNG d'un document avec acr-png2json
@@ -89,7 +85,7 @@ Si le résultat de la lecture n'est pas satisfaisant, reprenez l'image PNG et re
 
 Le code source de ce logiciel n'est pas public. Veuillez consulter le fichier [LICENSE](LICENSE) pour les conditions d'utilisation.
 
-Vous pouvez utiliser le logiciel sans clé de licence en choisissant « Ignorer » sur l'écran d'enregistrement de la licence au démarrage (cet écran s'affiche à chaque lancement).
+Le logiciel est gratuit, sans clé de licence requise.
 
 ## Contact
 

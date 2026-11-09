@@ -64,10 +64,6 @@ Download the file for your OS from [Releases](https://github.com/acrossreport/ac
    ```
    If it does not start because of missing execute permission, run `chmod +x linux-x64/AcrGenerator` first
 
-### License registration (all OS)
-
-On first launch, the license registration screen appears. Enter your email address and license key and click "Authenticate", or choose "Skip (with watermark)"
-
 ## Usage
 
 1. Use acr-png2json to create JSON from a PNG image of a business form
@@ -89,7 +85,7 @@ If the recognition result is poor, retake the PNG image and start again from acr
 
 The source code of this software is not publicly available. Please see [LICENSE](LICENSE) for the terms of use.
 
-You can use the software without a license key by choosing "Skip" on the license registration screen at startup (the registration screen appears each time you launch the software).
+The software is free to use, with no license key required.
 
 ## Contact
 
